@@ -41,8 +41,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
           <span class="badge">14 Sounds</span>
         </div>
       </div>
-      <div class="hero-image">
-        <img src="/nightmixer/images/Screen_1.png" alt="Night Mixer App Screenshot" />
+      <div class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="/nightmixer/images/AppPreview.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   </section>
@@ -387,12 +389,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     font-weight: 500;
   }
 
-  .hero-image {
+  .hero-video {
     flex-shrink: 0;
     width: 320px;
   }
 
-  .hero-image img {
+  .hero-video video {
     width: 100%;
     border-radius: 1.5rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(124, 58, 237, 0.2);
@@ -756,7 +758,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       justify-content: center;
     }
 
-    .hero-image {
+    .hero-video {
       width: 280px;
     }
 
@@ -797,7 +799,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       font-size: 0.95rem;
     }
 
-    .hero-image {
+    .hero-video {
       width: 220px;
     }
 
